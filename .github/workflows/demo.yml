@@ -4,11 +4,9 @@ on:
   workflow_dispatch:
 jobs:
   log-the-inputs:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted-nam]
     steps:
       - run: |
           echo "Log level: $LEVEL"
-          echo "Tags: $TAGS"
         env:
-          LEVEL: ${{ inputs.logLevel }}
-          TAGS: ${{ inputs.tags }}
+          LEVEL: 'nam ne'
