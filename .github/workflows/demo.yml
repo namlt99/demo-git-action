@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 jobs:
   log-the-inputs:
-    runs-on: [self-hosted-nam]
+    runs-on: [self-hosted]
     steps:
       - run: |
           echo "Log level: $LEVEL"
